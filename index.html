@@ -3,15 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cartões Interativos</title>
+  <title>Cartões Interativos po Marsuély 2B </title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f0f0f0;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .cards-wrapper {
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
     }
 
     .card-container {
@@ -48,6 +59,7 @@
       padding: 20px;
       box-sizing: border-box;
       font-size: 1.2em;
+      text-align: center;
     }
 
     .front {
@@ -64,31 +76,46 @@
 </head>
 <body>
 
-  <!-- Cartão 1 -->
-  <div class="card-container">
-    <div class="card" onclick="flipCard(this)">
-      <div class="front">
-        Qual é a capital do Brasil?
+  <h1>Cartões Interativos de Perguntas e Respostas</h1>
+
+  <div class="cards-wrapper">
+    <!-- Cartão 1 -->
+    <div class="card-container">
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">
+          Qual é a capital do Brasil?
+        </div>
+        <div class="back">
+          Brasília
+        </div>
       </div>
-      <div class="back">
-        Brasília
+    </div>
+
+    <!-- Cartão 2 -->
+    <div class="card-container">
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">
+          Quem descobriu o Brasil?
+        </div>
+        <div class="back">
+          Pedro Álvares Cabral
+        </div>
+      </div>
+    </div>
+
+    <!-- Nova Cartão 3 -->
+    <div class="card-container">
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">
+          Qual é a cor do céu em um dia claro?
+        </div>
+        <div class="back">
+          Azul
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Cartão 2 -->
-  <div class="card-container">
-    <div class="card" onclick="flipCard(this)">
-      <div class="front">
-        Quem descobriu o Brasil?
-      </div>
-      <div class="back">
-        Pedro Álvares Cabral
-      </div>
-    </div>
-  </div>
-
-  <!-- Adicione mais cartões aqui -->
   <script>
     function flipCard(card) {
       card.classList.toggle('flipped');
@@ -97,3 +124,9 @@
 
 </body>
 </html>
+
+   
+  
+
+ 
+ 
